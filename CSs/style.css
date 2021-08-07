@@ -4,7 +4,7 @@
     --header-height : 3rem;
      /* COLORS */
      /* CHANGE THE FAV COLOR */
-    --hue-color : 142;
+    --hue-color : 200;
     /*HSL VALUES:- 197,250,145,177,154,18,30,40,52,75,100,167,200,213,230,271,290,300,320,335,350,360, */
 /* hsl color mode */
     --first-color : hsl(var(--hue-color), 69%, 61%);
@@ -327,9 +327,9 @@ color: var(--first-color);
     margin-bottom: var(--mb-2);
 }
 
-.home__scroll{
-    /* display: none; */
-}
+/* .home__scroll{
+    display: none;
+} */
 
 .home__scroll{
     color: var(--first-color);
@@ -406,8 +406,8 @@ color: var(--first-color);
 /* About */
 
 .about__img{
-    width: 200px;
-    border-radius: .5rem;
+    width: 150px;
+    border-radius: 1rem;
     justify-self: center;
     align-self: center;
 
