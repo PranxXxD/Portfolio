@@ -835,6 +835,10 @@ row-gap: 0;
     color: #fff;
 }
 
+.empty__div{
+    padding: 20px;
+}
+
 .project__img{
     width: 232px;
     justify-self: center;
@@ -884,6 +888,7 @@ row-gap: 0;
 
 .contact__container{
     row-gap: 3rem;
+    column-gap: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
