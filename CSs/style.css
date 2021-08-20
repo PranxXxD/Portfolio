@@ -635,7 +635,7 @@ row-gap: 0;
     display: none;
 }
 
-.qualification__active [data-content]{
+.qualification__active[data-content]{
     display: block;
 }
 
@@ -884,6 +884,9 @@ row-gap: 0;
 
 .contact__container{
     row-gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .contact__information{
@@ -917,6 +920,7 @@ row-gap: 0;
 .contact__label{
     font-size: var(--smaller-font-size);
     color: var(--title-color);
+   
 }
 
 .contact__input{

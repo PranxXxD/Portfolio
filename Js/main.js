@@ -56,7 +56,7 @@ const skillsContent = document.getElementsByClassName('skills__content'),
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    console.log('click disparado')
+    // console.log('click disparado')
     const target = document.querySelector(tab.dataset.target)
 
     tabContents.forEach(tabContent => {
