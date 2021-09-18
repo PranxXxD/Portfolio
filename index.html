@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -427,14 +429,17 @@
                     <div class="qualification__content" data-content id="work">
                         <!-- qualification 1 -->
                         <div class="qualification__data">
-                            <div>
+                            <div class="InternCertificate">
                                 <h3 class="qualification__title">Wed-Developer Intern</h3>
                                 <span class="qualification__subtitle">keights Digitech pvt Ltd</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    May 2021 - Ongoing
+                                    May 2021 - Sep 2021
                                 </div>
-                            </div>
+                                <a href="./Assets/Internship_Completion_SaiPranay.pdf" target=_blank class="button button--link">
+                                    Certificate
+                                    <i class="uil uil-file-info-alt button__icon"></i>
+                                </a>                            </div>
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
@@ -451,29 +456,16 @@
                                 <!-- <span class="qualification__line"></span> -->
                             </div>
                             <div>
-                                <h3 class="qualification__title">Graduate Trainee </h3>
+                                <h3 class="qualification__title">Graduate Trainee</h3>
                                 <span class="qualification__subtitle">TCS PVT LTD - Mumbai</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    Joining Date - 8th September 2021
+                                    Sep 2021 - Present
                                 </div>
                             </div>
                         </div>
 
-                        <!-- <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Frontend-Developer</h3>
-                                <span class="qualification__subtitle">TCS PVT LTD - Mumbai</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Aug-2021
-                                </div>
-                            </div>
-                            <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                        </div> -->
+                      
 
                     </div>
                 </div>
@@ -786,33 +778,35 @@
                             <h3 class="contact__title">Location</h3>
                             <span class="contact__subtitle">Antophill,Sector 7, C.G.S colony - Mumbai 400037,India</span>
                         </div>
-                    </div>
+                    </div>_
                 </div>
-                <form action="" class="contact__form grid">
+                <?php
+                ?>
+                <form action="./php/get_response.php" name="contact_form" method="post"  class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" name="your_Name" class="contact__input">
                     </div>
                     <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" name="your_Email" class="contact__input">
                     </div>
-                </div>
-                <div class="contact__content">
-                    <label for="" class="contact__label">Project</label>
-                    <input type="text" class="contact__input">
-            </div>
-             <div class="contact__content">
-                    <label for="" class="contact__label">Message</label>
-                    <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                </div>
-                <div>
-                    <a href="" class="button button--flex">
-                        Send Message
-                        <i class="uil uil-message button__icon"></i>
-                    </a>
-                </div>
+                 </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Project</label>
+                        <input type="text" name="your_Project" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea  id="" name="your_Message" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="button button--flex" name="submit" value="submit" id="submit_form">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </button>
+                        </div>
                 </form>
             </div>
         </section>
@@ -838,9 +832,9 @@
                     </ul>
 
                     <div class="footer__socials">
-                        <!-- <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                            <i class="uil uil-facebook-f"></i>
-                        </a> -->
+                        <a href="https://github.com/PranxXxD" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
                         <a href="https://www.instagram.com/pranay_alishetty/" target="_blank" class="footer__social">
                             <i class="uil uil-instagram"></i>
                         </a>
@@ -865,6 +859,6 @@
 <!-- ===== main js ======= -->
     <script src="../Js/main.js">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </body>
-
 </html>
