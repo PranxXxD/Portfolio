@@ -1,6 +1,7 @@
 // on Windows load
 function randomColor() {
   let color = "#";
+  //   let navcolor = "#";
   let colorCode = [
     "82AAE3",
     "6A40BF",
@@ -18,10 +19,12 @@ function randomColor() {
     "750550",
   ];
   let classname = document.getElementsByClassName("Change");
+  let classname1 = document.getElementsByClassName("nav");
   let i;
   color += colorCode[Math.floor(Math.random() * colorCode.length)];
   for (i = 0; i < classname.length; i++) {
     classname[i].style.backgroundColor = color;
+    classname1[i].style.backgroundColor = color;
   }
 }
 
