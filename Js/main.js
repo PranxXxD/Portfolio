@@ -1,32 +1,37 @@
 // on Windows load
-function randomColor() {
-  let color = "#";
-  //   let navcolor = "#";
-  let colorCode = [
-    "82AAE3",
-    "6A40BF",
-    "61876E",
-    "852999",
-    "8843F2",
-    "FF99D7",
-    "6F38C5",
-    "E6AF2E",
-    "790C5A",
-    "62760C",
-    "F3CCFF",
-    "5902EC",
-    "CC9544",
-    "750550",
-  ];
-  let classname = document.getElementsByClassName("Change");
-  let classname1 = document.getElementsByClassName("nav");
-  let i;
-  color += colorCode[Math.floor(Math.random() * colorCode.length)];
-  for (i = 0; i < classname.length; i++) {
-    classname[i].style.backgroundColor = color;
-    classname1[i].style.backgroundColor = color;
-  }
-}
+// function randomColor() {
+//   let color = "#";
+//   //   let navcolor = "#";
+//   let colorCode = [
+//     "82AAE3",
+//     "6A40BF",
+//     "61876E",
+//     "852999",
+//     "8843F2",
+//     "FF99D7",
+//     "6F38C5",
+//     "E6AF2E",
+//     "790C5A",
+//     "62760C",
+//     "F3CCFF",
+//     "5902EC",
+//     "CC9544",
+//     "750550",
+//   ];
+//   let classname = document.getElementsByClassName("Change");
+//   let classname1 = document.getElementsByClassName("header");
+//   let classname2 = document.getElementsByClassName("nav__menu");
+//   let classname3 = document.getElementsByClassName("services__modal-content");
+
+//   let i;
+//   color += colorCode[Math.floor(Math.random() * colorCode.length)];
+//   for (i = 0; i < classname.length; i++) {
+//     classname[i].style.backgroundColor = color;
+//     classname1[i].style.backgroundColor = color;
+//     classname2[i].style.backgroundColor = color;
+//     classname3[i].style.backgroundColor = color;
+//   }
+// }
 
 // MENU SHOW Y HIDDEN//
 const navMenu = document.getElementById("nav-menu"),

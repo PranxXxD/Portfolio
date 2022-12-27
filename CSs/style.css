@@ -4,7 +4,7 @@
   --header-height: 3rem;
   /* COLORS */
   /* CHANGE THE FAV COLOR */
-  /* --hue-color: 260; */
+  --hue-color: 250;
   /*HSL VALUES:- 197,250,145,177,154,18,30,40,52,75,100,167,200,213,230,271,290,300,320,335,350,360, */
   /* hsl color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
