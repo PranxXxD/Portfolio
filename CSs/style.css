@@ -731,6 +731,7 @@ img {
   margin-right: var(--mb-0-25);
 }
 
+
 /* ==== Active Modal ====== */
 
 .active-modal {
@@ -1088,7 +1089,36 @@ img {
   .testimonial__description {
     text-align: center;
   }
+  .m-3{
+    margin-left: 3px;
+  }
+  .m-5{
+    width: auto;
+    margin-left: 7px;
+
+  }
+  .m-6{
+    margin-left: 6px;
+  }
+  .m-10{
+    margin-left: -10px;
+  }
+
+  .m-20{
+    margin-left: -20px;
+  }
+  .m-16{
+    margin-left: -16px;
+  }
+  .m-31{
+    margin-left: -31px;
+  }
+  .m-41{
+    
+      margin-left: -41px;
+  }
 }
+
 
 /* ======= For medium devices ===== */
 @media screen and (min-width: 568px) {
