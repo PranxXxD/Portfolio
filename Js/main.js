@@ -66,7 +66,7 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 // Accordion skills
 
 const skillsContent = document.getElementsByClassName("skills__content"),
-  skillsHeader = document.querySelectorAll(".skills__header");
+  skillsHeader = document.querySelectorAll(".skills__header")
 
 function toggleSkills() {
   let itemClass = this.parentNode.className;
@@ -77,11 +77,41 @@ function toggleSkills() {
   if (itemClass === "skills__content skills__close") {
     this.parentNode.className = "skills__content skills__open";
   }
+  function animateMultipleIds(ids) {
+    ids.split(" ").forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.animate([
+          // { width: '0px', transform: 'translateX(0%)' },
+          // { width: "50px", transform: 'translateX(25%)' },
+          // { width: "75px", transform: 'translateX(50%)' },
+          // { width: "100px", transform: 'translateX(75%)' },
+          // { width: "150px", transform: 'translateX(100%)' }
+          { width: '0%' },
+          { width: "25%" },
+          { width: "50%" },
+          { width: "75%"},
+          { width: "100%" }
+        ], {
+          duration: 7000,
+          easing: 'ease'
+        });
+      }
+    });
+  }
+  
+  animateMultipleIds("html css Js react node firebase mongo figma photoshop tailwind nextjs bootstrap");
+  
 }
 
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
+
+
+
+
+
 
 /*************** Qualification Tabs */
 const tabs = document.querySelectorAll("[data-target]"),
