@@ -420,6 +420,7 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  width: fit-content;
 }
 
 .button:hover {
@@ -468,6 +469,16 @@ img {
   align-self: center;
 }
 
+.svg__animation3{
+  display: flex;
+  place-content : center;
+  
+}
+
+.svg__animation3 > svg{
+  width: 300px;
+}
+
 .about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
@@ -506,11 +517,22 @@ img {
   row-gap: 3;
 }
 
+.svg__animation{
+  display: flex;
+  place-content: center;
+  margin: 0px 0px 1.5rem 0px;
+  
+}
+
+.svg__animation > svg{
+  width: 300px;
+}
+
 .skills__header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1);
   cursor: pointer;
   text-align: left;
 }
@@ -925,6 +947,16 @@ img {
   justify-self: center;
 }
 
+.svg__animation2{
+  display: flex;
+  place-content : center;
+  
+}
+
+.svg__animation2 > svg{
+  width: 300px;
+}
+
 /* ====== Testimonials ======== */
 
 .testimonial__data,
@@ -1282,11 +1314,11 @@ img {
   }
 
   .section {
-    padding: 6rem 0 2rem;
+    padding: 4rem 0 2rem;
   }
 
   .section__subtitle {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
   .header {
     top: 0;
@@ -1417,6 +1449,9 @@ img {
   }
 
   .project__data {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
     padding-top: 0.8rem;
   }
   .footer__container {

@@ -93,7 +93,7 @@ function toggleSkills() {
           { width: "75%"},
           { width: "100%" }
         ], {
-          duration: 7000,
+          duration: 2000,
           easing: 'ease'
         });
       }
